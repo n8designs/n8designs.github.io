@@ -60,13 +60,13 @@ a {
 }
 
 #AboutMe {
-  transform: scale(0);
+  /* transform: scale(0); */
   width: 100vw;
-  transition: 0.5s;
+  /* transition: 0.5s; */
 }
 
 #mainPage {
-  transition: 0.5s;
+  /* transition: 0.5s; */
   width: 100vw;
 }
 
@@ -100,6 +100,7 @@ a {
   margin-top: 2%;
   position: fixed;
   z-index: -2;
+  width: 2rem;
 }
 
 .imageclass {
@@ -155,7 +156,6 @@ a {
   float: left;
   box-sizing: content-box;
   margin-bottom: 160px;
-  background-color: red;
 }
 
 .row {
@@ -165,7 +165,11 @@ a {
   top: 4%;
   bottom: 20%;
   left: 70%;
-  background-color: grey;
+}
+
+.sidetitle {
+  margin-left: 20vw;
+  margin-bottom: -5vh;
 }
 
 .button {
@@ -174,7 +178,7 @@ a {
   height: 1rem;
   padding: 2rem;
   padding-bottom: 3rem;
-  border-radius: 50px;
+  border-radius: 10vh;
   border: 0.2rem solid #3B3B3B;
   background-color: #FAFAFA;
   transition: 0.5s;
@@ -197,10 +201,21 @@ a {
 
 .buttonselected {
   position: relative;
-  z-index: -1;
-  height: 35px;
-  padding: 15px;
-  border-radius: 50px;
+  z-index: 10;
+  height: 1rem;
+  padding: 2rem;
+  padding-bottom: 3rem;
+  padding-left: 1rem;
+  border-radius: 10vh;
+  transition: 0.5s;
+  box-sizing: content-box;
+  font-size: 1.5vw;
+  display: block;
+  text-align: center;
+  font-family: neue-haas-unica, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  margin-left: 1.5vw;
   border: 3px solid #3B3B3B;
   background-color: #257AFD;
 }
@@ -222,6 +237,7 @@ a {
   grid-template-rows: auto;
   /* grid-gap: 20%; */
   width: 20vw;
+  margin-left: -1vw;
   /* grid-column-gap: 100px; */
 }
 
@@ -229,6 +245,7 @@ a {
   width: 2005px;
   height: 151px;
   margin-left: -1px;
+  z-index: 100;
 }
 
 .projectcards {
@@ -236,8 +253,8 @@ a {
   width: 2000px;
   height: 150px;
   margin-top: 50px;
-  margin-bottom: 25px;
-  z-index: 10;
+  margin-bottom: 6vh;
+  z-index: 100;
   border-radius: 55px;
   box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.5);
   transition: 0.3s ease-out;
@@ -329,9 +346,134 @@ a {
   position: absolute;
   mix-blend-mode: difference;
   pointer-events: none;
-  z-index: 1;
+  z-index: 2;
   transition: 0.15s ease;
   animation: blobRadius 3s ease infinite, blobBackground 7s ease infinite;
+}
+
+.modal-interact:hover {
+  animation: hover-interact 1s ease infinite;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 30;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: none;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: black;
+  margin: 5% auto;
+  border: 1px solid #888;
+  width: 80%;
+  height: 80%;
+  color: white;
+}
+
+.modal-container {
+  display: grid;
+  grid-template-columns: 40% auto;
+  column-gap: 5%;
+  height: 100%;
+}
+
+.modal-pic-container {
+  overflow: hidden;
+  background-image: url(../images/melontimeoverview.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200%;
+}
+
+.modal-pic {
+  width: 200%;
+  left: -50%;
+}
+
+.modal-title {
+  align-self: end;
+  font-size: 2.5rem;
+  letter-spacing: .1rem;
+  margin-bottom: 0;
+}
+
+.modal-nested-container {
+  display: grid;
+  grid-template-rows: 25% 10% 50% 5% 10%;
+}
+
+.modal-nested-close {
+  display: grid;
+  grid-template-columns: 80% auto;
+}
+
+.modal-viewpage-btn {
+  display: grid;
+  /* grid-template-columns: 40% auto; */
+  grid-template-columns: max-content 60%;
+}
+
+.modal-list {
+  align-self: start;
+  list-style-type: none;
+  list-style: none;
+  padding: 0;
+}
+
+.modal-list-item {
+  display: inline-block;
+  margin-right: 20%;
+}
+
+.modal-button {
+  position: relative;
+  z-index: 10;
+  height: .2rem;
+  padding: 1rem;
+  padding-bottom: 2.1rem;
+  border-radius: 10vh;
+  border: 0.2rem solid white;
+  transition: 0.5s;
+  box-sizing: content-box;
+  font-size: 1rem;
+  display: block;
+  text-align: center;
+  font-family: neue-haas-unica, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  cursor: pointer;
+  background: none;
+  color: white;
+}
+
+.modal-button:hover {
+  padding-left: 4rem;
+  padding-right: 4rem;
+  cursor: pointer;
+  color: #257AFD;
+  border: 0.2rem solid #257AFD;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  margin-right: 2vw;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 @keyframes blobRadius {
@@ -382,12 +524,10 @@ a {
   }
 
   25% {
-    background-position: 0%
+    background-position: 0%;
   }
 
   50% {
-    background-position: 100% 50%
+    background-position: 100% 50%;
   }
-
-  ;
 }

@@ -1,0 +1,179 @@
+html {
+  background-color: black;
+}
+
+.project-grid-container {
+  grid-template-rows: 30% auto;
+  height: 100vh;
+  background-color: black;
+}
+
+.project-grid-header-container {
+  grid-template-rows: 20: 80%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(../images/melontimeoverview.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+  background-color: black;
+  min-height: 50%
+}
+
+.project-button {
+  position: relative;
+  z-index: 10;
+  height: .2rem;
+  padding: 1rem;
+  padding-bottom: 3rem;
+  border-radius: 5rem;
+  border: 0.2rem solid white;
+  transition: 0.5s;
+  box-sizing: content-box;
+  font-size: 2rem;
+  display: block;
+  text-align: center;
+  font-family: neue-haas-unica, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  cursor: pointer;
+  background: none;
+  color: white;
+  width: 3rem;
+}
+
+.project-button:hover {
+  padding-left: 2rem;
+  padding-right: 3rem;
+  cursor: pointer;
+  color: #257AFD;
+  border: 0.2rem solid #257AFD;
+}
+
+.project-title-container {
+  /* grid-template-columns: 40% 40%;
+  grid-template-rows: 40% 40%;
+  column-gap: 20%; */
+  align-self: end;
+  color: white;
+  margin-left: 5vw;
+  margin-top: 50vh;
+}
+
+.project-title {
+  align-self: end;
+  font-size: 3.5rem;
+  letter-spacing: .1rem;
+  margin-bottom: 0;
+  display: inline-block;
+  margin-right: 30%;
+}
+
+.project-subtitle {
+  align-self: end;
+  font-size: 2rem;
+  letter-spacing: .1rem;
+  margin-bottom: 0;
+}
+
+.project-list {
+  box-sizing: content-box;
+  align-self: end;
+  list-style-type: none;
+  list-style: none;
+  padding: 0;
+}
+
+.project-list-item {
+  display: inline-block;
+  margin-right: 5%;
+}
+
+.project-title-margin {
+  margin-right: 40%;
+}
+
+.project-detail-container {
+  height: 100%;
+  width: 100%;
+  box-sizing: content-box;
+  color: white;
+  margin-left: 5rem;
+}
+
+#project-process {}
+
+.process-row {
+  display: grid;
+  box-sizing: content-box;
+  grid-template-rows: auto auto;
+  grid-row-gap: 5rem;
+}
+
+.process-column {
+  display: grid;
+  box-sizing: content-box;
+  grid-template-columns: 5% 35% auto;
+  grid-column-gap: 5%;
+  grid-row-gap: : 5%;
+  margin-top: 10rem;
+  width: 85vw;
+}
+
+.process-column2 {
+  display: grid;
+  box-sizing: content-box;
+  grid-template-columns: 37% auto;
+  grid-column-gap: 5%;
+  grid-row-gap: : 0;
+  width: 80vw;
+  margin-left: 8.5rem;
+}
+
+.process-column3 {
+  display: grid;
+  box-sizing: content-box;
+  grid-template-columns: 33% 33% 33%;
+  grid-column-gap: 5%;
+  grid-row-gap: : 0;
+  width: 80vw;
+  margin-left: 8.5rem;
+}
+
+.process-paragraph-grid {
+  display: grid;
+  grid-template-rows: 30% 80%;
+}
+
+.process-paragraph-title {
+  align-self: start;
+  font-size: 2rem;
+  font-weight: 50;
+  margin-bottom: 0.1rem;
+  margin-top: -1rem;
+  ;
+  border-bottom: 1px solid white;
+  max-width: 30vw;
+}
+
+.process-paragraph {
+  margin-top: -0.6rem;
+}
+
+.project-detail-sectiontitle {
+  align-self: start;
+  font-size: 3rem;
+  letter-spacing: .3rem;
+  margin-bottom: 0;
+  display: inline-block;
+  color: white;
+  transform: rotate(-90deg);
+  margin-left: -7rem;
+  margin-top: 6rem;
+}
+
+.project-detail-pic {
+  box-sizing: content-box;
+  width: 100%;
+  margin-left: -5rem;
+}
+
+#project-overview {}
