@@ -89,16 +89,17 @@ a {
   margin-left: 5%;
 }
 
-.mainarea h1 {
-  font-size: 3.5vw;
+.mainarea h2 {
+  font-size: 3rem;
   font-family: neue-haas-unica, sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-style: medium;
   letter-spacing: 2px;
+  max-width: 80%;
 }
 
-.mainarea h2 {
-  font-size: 3.5vw;
+.mainarea h1 {
+  font-size: 3rem;
   font-family: neue-haas-unica, sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -108,7 +109,6 @@ a {
 .backarrow {
   margin-left: 5%;
   margin-top: 2%;
-  position: fixed;
   z-index: -2;
   width: 2rem;
 }
@@ -119,47 +119,53 @@ a {
 }
 
 .portrait {
-  position: fixed;
-  z-index: -5;
-  height: 291.56px;
-  width: 362.3px;
-  margin-left: 5%;
-  margin-top: 10%;
+  /* overflow: hidden;
+  background-image: url(../images/nathan_portrait_1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%; */
+  max-width: 100%;
+}
+
+.aboutmegrid-container {
+  display: grid;
+  height: 100%;
+  grid-template-rows: 10% auto;
+  grid-row-gap: 10%;
+}
+
+.aboutmegrid {
+  display: grid;
+  grid-template-columns: 30% 40%;
+  grid-template-rows: 50% auto;
+  grid-column-gap: 10%;
+  grid-row-gap: 20%;
+  margin-left: 7%;
 }
 
 .aboutmearea {
-  position: fixed;
   display: inline-block;
   width: 100%;
   height: 100%;
   z-index: -3;
-  margin-left: 35%;
-  margin-right: 5%;
-  margin-top: 15%;
 }
 
-.aboutmearea h1 {
-  font-size: 1.5vw;
+.aboutmearea p {
+  font-size: 1.2rem;
   font-family: neue-haas-unica, sans-serif;
   font-weight: 500;
   font-style: medium;
-  letter-spacing: 2px;
+  line-height: 2.3rem;
+  letter-spacing: 0.1rem;
 }
 
-.aboutmearea h2 {
-  font-size: 2.2vw;
+.aboutmearea h1 {
+  font-size: 2rem;
   font-family: neue-haas-unica, sans-serif;
   font-weight: 600;
   font-style: normal;
   margin-bottom: -1%;
-}
-
-.buttonplacement {
-  position: fixed;
-  z-index: 1;
-  margin-left: 5%;
-  margin-top: 33%;
-  margin-bottom: 50
+  margin-top: 0;
 }
 
 .column {
@@ -182,6 +188,10 @@ a {
   margin-bottom: -5vh;
 }
 
+a:visited {
+  color: black;
+}
+
 .button {
   position: relative;
   z-index: 10;
@@ -190,10 +200,10 @@ a {
   padding-bottom: 3rem;
   border-radius: 10vh;
   border: 0.2rem solid #3B3B3B;
-  background-color: #FAFAFA;
+  background-color: none;
   transition: 0.5s;
   box-sizing: content-box;
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   display: block;
   text-align: center;
   font-family: neue-haas-unica, sans-serif;
@@ -219,14 +229,14 @@ a {
   border-radius: 10vh;
   transition: 0.5s;
   box-sizing: content-box;
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   display: block;
   text-align: center;
   font-family: neue-haas-unica, sans-serif;
   font-weight: 200;
   font-style: normal;
   margin-left: 1.5vw;
-  border: 3px solid #3B3B3B;
+  color: white;
   background-color: #257AFD;
   padding-left: 4rem;
   padding-right: 4rem;
@@ -250,6 +260,17 @@ a {
   /* grid-gap: 20%; */
   width: 30vw;
   margin-left: -1vw;
+  /* grid-column-gap: 100px; */
+}
+
+.buttonGrid2 {
+  position: relative;
+  display: none;
+  grid-template-columns: max-content max-content max-content;
+  grid-template-rows: auto;
+  /* grid-gap: 20%; */
+  width: 30vw;
+  margin-left: 20vw;
   /* grid-column-gap: 100px; */
 }
 
@@ -424,6 +445,12 @@ a {
   margin-bottom: 0;
 }
 
+.modal-desc {
+  line-height: 1, 3rem;
+  max-width: 90%;
+  letter-spacing: .05rem;
+}
+
 .modal-nested-container {
   display: grid;
   grid-template-rows: 25% 10% 50% 5% 10%;
@@ -496,6 +523,10 @@ a {
   cursor: pointer;
 }
 
+a.modal-button:visited {
+  color: white;
+}
+
 @keyframes blobRadius {
   0%, 100% {
     border-radius: 42% 72% 60% 80% / 30% 60% 20% 70%;
@@ -550,4 +581,38 @@ a {
   50% {
     background-position: 100% 50%;
   }
+}
+
+@media (max-width:1279px) {
+  html {
+    font-size: 2vw;
+  }
+
+  .cursor {
+    display: none;
+  }
+
+  .row {
+    display: none;
+  }
+
+  .mainarea {
+    width: 80%;
+  }
+
+  .aboutmegrid {
+    grid-template-columns: 1fr;
+    grid-row-gap: 20%;
+    margin-right: 7%;
+  }
+
+  .buttonGrid2 {
+    display: grid;
+  }
+
+  .buttonGrid {
+    display: none;
+  }
+
+  .mainarea h1 {}
 }

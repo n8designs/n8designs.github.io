@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+
   <title></title>
   <link rel="stylesheet" href="https://use.typekit.net/acl2xwu.css">
   <link href="css/style.css" rel="stylesheet">
@@ -15,33 +17,43 @@
 </head>
 
 <body>
+  <div class=cursor></div>
   <section id='AboutMe'>
-    <div class=cursor></div>
-    <!-- <img src="images/backarrow.png" div class="backarrow" alt="go back here" onclick="returnMain()" style="cursor:pointer;"> -->
-    <nav>
-      <a onclick="goback()" class="button backarrow">&#8701;</a>
-    </nav>
-    <img src="images/nathan_portrait_1.png" div class="imageclass portrait" alt="Picture of me :-)">
+
+    <div class="aboutmegrid-container">
+
+      <!-- <img src="images/backarrow.png" div class="backarrow" alt="go back here" onclick="returnMain()" style="cursor:pointer;"> -->
+      <nav>
+        <a onclick="goback()" class="button backarrow">&#8701;</a>
+      </nav>
+
+      <div class="aboutmegrid">
+        <img class="portrait" src="images/nathan_portrait_1.png" alt="Picture of me :-)">
+
+        <div class="aboutmearea">
+          <h1>About me~</h1>
+          <p>I’m Nathan Tanciangco, a maker of graphics,
+            designs and videogames. Currently in my 5th year
+            in the undergraduate program at the School of
+            Interactive Arts and Technology (SIAT), located
+            at Simon Fraser University in Vancouver, BC. I'm passionate about all aspects of design, from user
+            experience, to industrial and material design. I
+            aim to incorporate mixtures of color and texture
+            in new spaces. Specializing in producing visual
+            design, using Adobe Suite for both digital and
+            print. I am also knowledgeable in AutoDesk Maya
+            for 3D visuals.
+          </p>
+        </div>
 
 
-    <div class="aboutmearea">
-      <h2>About me~</h2>
-      <h1>I’m Nathan, aspiring designer<br> and maker of things, based in Vancouver, B.C. </h1>
-    </div>
-
-    <div class="buttonplacement">
-      <div class=buttonGrid>
-        <!-- <div class="button b1" onclick="moreWork()" style="cursor: pointer;">
-          <a>more work</a>
-        </div> -->
         <nav class=buttonGrid>
-          <!-- <a class="button" href=""> more work </a> -->
           <a class="buttonselected b2"> about </a>
           <a class="button" href="contact.html"> contact me! </a>
         </nav>
+
       </div>
     </div>
-
   </section>
 </body>
 
