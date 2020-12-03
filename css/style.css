@@ -8,6 +8,16 @@ html {
   font-size: 1vw;
 }
 
+::selection {
+  color: black;
+  background: #FFD74A;
+}
+
+::-moz-selection {
+  color: black;
+  background: #FFD74A;
+}
+
 /* section {
   z-index: 3;
 } */
@@ -218,6 +228,8 @@ a {
   margin-left: 1.5vw;
   border: 3px solid #3B3B3B;
   background-color: #257AFD;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .buttonselected a {
@@ -236,7 +248,7 @@ a {
   grid-template-columns: max-content max-content max-content;
   grid-template-rows: auto;
   /* grid-gap: 20%; */
-  width: 20vw;
+  width: 30vw;
   margin-left: -1vw;
   /* grid-column-gap: 100px; */
 }
@@ -384,12 +396,20 @@ a {
   height: 100%;
 }
 
-.modal-pic-container {
+.melontimemodal-pic-container {
   overflow: hidden;
-  background-image: url(../images/melontimeoverview.jpg);
+  background-image: url(../images/melontimeoverview.JPG);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 200%;
+}
+
+.hatchedmodal-pic-container {
+  overflow: hidden;
+  background-image: url(../images/hatched1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 220%;
 }
 
 .modal-pic {

@@ -8,12 +8,22 @@ html {
   background-color: black;
 }
 
-.project-grid-header-container {
+.project-grid-header-container-melon {
   grid-template-rows: 20: 80%;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(../images/melontimeoverview.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(../images/melontimeoverview.JPG);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70%;
+  background-color: black;
+  min-height: 50%
+}
+
+.project-grid-header-container-hatch {
+  grid-template-rows: 20: 80%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(../images/hatched1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
   background-color: black;
   min-height: 50%
 }
@@ -23,7 +33,7 @@ html {
   z-index: 10;
   height: .2rem;
   padding: 1rem;
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
   border-radius: 5rem;
   border: 0.2rem solid white;
   transition: 0.5s;
@@ -134,13 +144,34 @@ html {
   grid-template-columns: 33% 33% 33%;
   grid-column-gap: 5%;
   grid-row-gap: : 0;
-  width: 80vw;
+  width: 78vw;
+  margin-left: 8.5rem;
+}
+
+.process-column4 {
+  display: grid;
+  box-sizing: content-box;
+  grid-template-columns: 47.5% 47.5%;
+  grid-column-gap: 5%;
+  grid-row-gap: : 0;
+  width: 78vw;
   margin-left: 8.5rem;
 }
 
 .process-paragraph-grid {
   display: grid;
   grid-template-rows: 30% 80%;
+  grid-row-gap: 0;
+}
+
+.process-column5 {
+  display: grid;
+  box-sizing: content-box;
+  grid-template-columns: 24% 24% 24% 24%;
+  grid-column-gap: 5%;
+  grid-row-gap: : 0;
+  width: 78vw;
+  margin-left: 8.5rem;
 }
 
 .process-paragraph-title {
@@ -156,6 +187,8 @@ html {
 
 .process-paragraph {
   margin-top: -0.6rem;
+  max-width: 33vw;
+  line-height: 160%;
 }
 
 .project-detail-sectiontitle {
@@ -174,6 +207,22 @@ html {
   box-sizing: content-box;
   width: 100%;
   margin-left: -5rem;
+}
+
+.firstpara {
+  margin-top: -3rem;
+}
+
+.firstpara2 {
+  margin-top: -13.5rem;
+}
+
+.firstpara3 {
+  margin-top: -10.5rem;
+}
+
+.firstpara4 {
+  margin-top: -4.5rem;
 }
 
 #project-overview {}

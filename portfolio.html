@@ -51,7 +51,7 @@
         </div>
       </div>
       <div class="column">
-        <div class="projectcards" onclick="hatchedpage()" style="cursor: pointer;">
+        <div id="hatchedbtn" class="projectcards" onclick="hatchedpage()" style="cursor: pointer;">
           <img src="images/hatchedcard.png" class="imagecards" alt="Melontime Project">
           <h1> hatched</h1>
           <h2> 2 months <br>Nov - Dec '19<h2>
@@ -60,7 +60,7 @@
       </div>
 
       <div class="column">
-        <div class="projectcards" onclick="agodapage()" style="cursor: pointer;">
+        <div id="agodabtn" class="projectcards" onclick="agodapage()" style="cursor: pointer;">
           <img src="images/agodaappcard.png" class="imagecards" alt="Melontime Project">
           <h4> agoda<br>feature redesign</h4>
           <h2> 16 hours <br>Aug '20<h2>
@@ -69,7 +69,7 @@
       </div>
 
       <div class="column">
-        <div class="projectcards" onclick="safeshellspage()" style="cursor: pointer;">
+        <div id="shellsbtn" class="projectcards" onclick="safeshellspage()" style="cursor: pointer;">
           <img src="images/safeshellscard.png" class="imagecards" alt="Melontime Project">
           <h1> safeshells</h1>
           <h2> 2 months <br>July - Aug '20<h2>
@@ -85,7 +85,7 @@
 
     <div class="modal-content">
       <div class="modal-container">
-        <div class="modal-pic-container">
+        <div class="melontimemodal-pic-container">
           <!-- <img src="images/melontimeoverview.jpg" class="modal-pic" alt="Melontime Project"> -->
         </div>
 
@@ -109,12 +109,12 @@
           <p> hello hello</p>
 
           <div class="modal-viewpage-btn">
-            <a href="melontime.html" class="modal-button" onclick="moreWork()"> &nbsp; &nbsp; view page &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;</a>
+            <a href="melontime.html" class="modal-button"> &nbsp; &nbsp; view page &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;</a>
           </div>
           <div class="modal-nested-close">
             <div>
             </div>
-            <span class="close">close</span>
+            <span id="melonclose" class="close">close</span>
           </div>
         </div>
       </div>
@@ -122,6 +122,125 @@
 
 
   </div>
+
+  <div id="hatchedmodal" class="modal">
+    <div class="modal-content">
+      <div class="modal-container">
+        <div class="hatchedmodal-pic-container">
+          <!-- <img src="images/melontimeoverview.jpg" class="modal-pic" alt="Melontime Project"> -->
+        </div>
+
+        <div class="modal-nested-container">
+
+          <h2 class="modal-title">hatched </h2>
+
+          <ul class="modal-list">
+            <li class="modal-list-item">
+              <h3> 2 months </h3>
+            </li>
+            <li class="modal-list-item">
+              <h3> team of 5 </h3>
+            </li>
+            <li class="modal-list-item">
+              <h3> assignment </h3>
+            </li>
+
+          </ul>
+
+          <p> hello hello</p>
+
+          <div class="modal-viewpage-btn">
+            <a href="hatched.html" class="modal-button"> &nbsp; &nbsp; view page &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;</a>
+          </div>
+          <div class="modal-nested-close">
+            <div>
+            </div>
+            <span id="hatchedclose" class="close">close</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="agodamodal" class="modal">
+    <div class="modal-content">
+      <div class="modal-container">
+        <div class="agodamodal-pic-container">
+          <!-- <img src="images/melontimeoverview.jpg" class="modal-pic" alt="Melontime Project"> -->
+        </div>
+
+        <div class="modal-nested-container">
+
+          <h2 class="modal-title">hatched </h2>
+
+          <ul class="modal-list">
+            <li class="modal-list-item">
+              <h3> 2 months </h3>
+            </li>
+            <li class="modal-list-item">
+              <h3> team of 5 </h3>
+            </li>
+            <li class="modal-list-item">
+              <h3> assignment </h3>
+            </li>
+
+          </ul>
+
+          <p> hello hello</p>
+
+          <div class="modal-viewpage-btn">
+            <a href="agoda.html" class="modal-button"> &nbsp; &nbsp; view page &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;</a>
+          </div>
+          <div class="modal-nested-close">
+            <div>
+            </div>
+            <span id="agodaclose" class="close">close</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="shellsmodal" class="modal">
+    <div class="modal-content">
+      <div class="modal-container">
+        <div class="shellsmodal-pic-container">
+          <!-- <img src="images/melontimeoverview.jpg" class="modal-pic" alt="Melontime Project"> -->
+        </div>
+
+        <div class="modal-nested-container">
+
+          <h2 class="modal-title">hatched </h2>
+
+          <ul class="modal-list">
+            <li class="modal-list-item">
+              <h3> 2 months </h3>
+            </li>
+            <li class="modal-list-item">
+              <h3> team of 5 </h3>
+            </li>
+            <li class="modal-list-item">
+              <h3> assignment </h3>
+            </li>
+
+          </ul>
+
+          <p> hello hello</p>
+
+          <div class="modal-viewpage-btn">
+            <a href="safeshells.html" class="modal-button"> &nbsp; &nbsp; view page &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;</a>
+          </div>
+          <div class="modal-nested-close">
+            <div>
+            </div>
+            <span id="shellsclose" class="close">close</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 </body>
 
