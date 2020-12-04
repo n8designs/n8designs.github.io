@@ -3,6 +3,8 @@ var hatchedmodal = document.getElementById("hatchedmodal");
 var agodamodal = document.getElementById("agodamodal");
 var shellsmodal = document.getElementById("shellsmodal");
 
+var melonanimate = document.getElementById("melonmodal-animate");
+
 var melontimebtn = document.getElementById("melontimebtn");
 var hatchedbtn = document.getElementById("hatchedbtn");
 var agodabtn = document.getElementById("agodabtn");
@@ -13,19 +15,28 @@ var hatchspan = document.getElementById("hatchedclose");
 var agodaspan = document.getElementById("agodaclose");
 var shellsspan = document.getElementById("shellsclose");
 
+const footer = document.getElementById("footer");
+var mainarea = document.getElementById("mainClick");
+var cards = document.getElementById("cards");
+
+
 melontimebtn.onclick = function() {
+  footer.style.height = "0";
   modal.style.display = "block";
 }
 
 hatchedbtn.onclick = function() {
+  footer.style.height = "0";
   hatchedmodal.style.display = "block";
 }
 
 agodabtn.onclick = function() {
+  footer.style.height = "0";
   agodamodal.style.display = "block";
 }
 
 shellsbtn.onclick = function() {
+  footer.style.height = "0";
   shellsmodal.style.display = "block";
 }
 
@@ -61,4 +72,22 @@ window.onclick = function(event) {
   if (event.target == shellsmodal) {
     shellsmodal.style.display = "none";
   }
+
+  if (event.target == mainarea) {
+    footer.style.height = "0";
+  }
+
+  if (event.target == cards) {
+    footer.style.height = "0";
+  }
+
+}
+
+function openFooter() {
+  footer.style.height = "10rem";
+}
+
+
+function closeFooter() {
+  footer.style.height = "0";
 }

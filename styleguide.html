@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Styleguide for n8design Portfolio</title>
+  <link rel="stylesheet" href="https://use.typekit.net/acl2xwu.css">
+  <link href="css/style.min.css" rel="stylesheet">
+  <script type="text/javascript" src="js/blob.min.js" defer async></script>
+  <link rel="icon" href="images/headericon.ico">
+
+</head>
+
+<body class="styleguide">
+  <div class=cursor></div>
+  <header>
+    <h1> Nathan Tanciangco StyleGuide for Portfolio</h1>
+
+    <h2>Ethos</h2>
+    <p>Hello! I’m Nathan Tanciangco, maker of graphics,
+      designs and videogames. Currently in my 4th year
+      in the undergraduate program at the School of
+      Interactive Arts and Technology (SIAT), located
+      at Simon Fraser University in Vancouver,BC. Passionate about all aspects of design, from user
+      experience, to industrial and material design. I
+      aim to incorporate mixtures of color and texture
+      in new spaces. Specializing in producing visual
+      design, using Adobe Suite for both digital and
+      print. I am also knowledgeable in AutoDesk Maya
+      for 3D visuals. </p>
+
+    <section>
+      <h2>The Portfolio</h2>
+      <button class="button" onclick="window.open('index.html');"> Portfolio </button>
+      </nav>
+    </section>
+  </header>
+
+
+  <!-- INTERACTIVE ELEMENTS SECTION // -->
+  <section id="interactive_elements">
+
+    <!-- Default Button styling section -->
+    <section>
+
+      <h2>Navigation Button</h2>
+
+      <h3>CSS selector:</h3>
+      <p>.button-nav</p>
+
+      <h3>Sample code:</h3>
+      <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+
+      <h3>Rendered element:</h3>
+
+      <nav class="buttonGrid">
+        <button class="button" onclick="contactme()"> contact me! </button>
+      </nav>
+    </section>
+
+    <section>
+      <h2>In-text link</h2>
+      <h3>CSS selector:</h3>
+      <p>.text-link</p>
+
+      <h3>Sample code:</h3>
+      <code>&lt;a href="#" class="text-link"&gt;text link here&lt;/a&gt;</code>
+
+      <h3>Rendered element:</h3>
+
+      <a href="" class="text-link"> text link here
+      </a>
+
+    </section>
+
+    <section class="cardsection">
+      <h2>Image Navigation</h2>
+      <div class="column">
+        <div class="projectcards styleguidecards" onclick="melontimepage()" style="cursor: pointer;">
+          <img src="images/melontimecard.png" class="imagecards" alt="Melontime Project">
+
+
+        </div>
+      </div>
+    </section>
+
+
+  </section>
+  <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+  <!-- TEXT ELEMENTS SECTION // -->
+  <section id="text_elements">
+    <section>
+      <h3>Headings</h3>
+      <h4>CSS selector:</h4>
+      <p>.h1-heading</p>
+
+      <h4>Sample code:</h4>
+      <code>&lt;h1 class="h1-heading"&gt;H1 Heading&lt;/h1&gt;</code>
+
+      <h4>Rendered element:</h4>
+      <h1 class="h1-heading"> H1 Heading</h1>
+      <h4>CSS selector:</h4>
+      <p>.h2-heading</p>
+
+      <h4>Sample code:</h4>
+      <code>&lt;h2 class="h2-heading"&gt;H2 Heading&lt;/h2&gt;</code>
+
+      <h4>Rendered element:</h4>
+      <h2 class="h2-heading"> H2 Heading</h2>
+      <h4>CSS selector:</h4>
+      <p>.h3-heading</p>
+
+      <h4>Sample code:</h4>
+      <code>&lt;h3 class="h3-heading"&gt;H3 Heading&lt;/h3&gt;</code>
+
+      <h4>Rendered element:</h4>
+      <h3 class="h3-heading"> H3 Heading</h3>
+      <h4>CSS selector:</h4>
+      <p>.h4-heading</p>
+
+      <h4>Sample code:</h4>
+      <code>&lt;h4 class="h4-heading"&gt;H4 Heading&lt;/h4&gt;</code>
+
+      <h4>Rendered element:</h4>
+      <h4 class="h4-heading"> H4 Heading</h4>
+    </section>
+
+    <section>
+      <h2>Paragraphs</h2>
+      <h4>CSS selector:</h4>
+      <p>.para-text</p>
+
+      <h4>Sample code:</h4>
+      <code>&lt;p class="para-text"&gt;text here&lt;/p&gt;</code>
+
+      <h4>Rendered element:</h4>
+      <p class="para-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis
+        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+    </section>
+
+  </section>
+  <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+  <!-- COMBINED ELEMENTS SECTION // -->
+  <section id="combined_elements">
+
+    <section>
+      <h2>Main Navigation</h2>
+      <nav class="buttonGrid">
+        <button class="button" onclick="moreWork()"> more work </button>
+        <button class="button" onclick="aboutMe()"> about </button>
+        <button class="button" onclick="contactme()"> contact me! </button>
+      </nav>
+    </section>
+
+    <section class="cardsection">
+      <h2>Image Navigation</h2>
+      <div class="column">
+        <div class="projectcards styleguidecards" onclick="melontimepage()" style="cursor: pointer;">
+          <img src="images/melontimecard.png" class="imagecards" alt="Melontime Project">
+          <h1> melontime</h1>
+          <h2> 1 month <br>Nov - Dec '19<h2>
+              <h3> #physical product design <br> #brand design</h3>
+
+        </div>
+      </div>
+    </section>
+
+  </section>
+  <!-- // COMBINED ELEMENTS SECTION -->
+
+  <!-- FONT SECTION -->
+  <section>
+    <h2> Fonts Used </h2>
+    <h2 class="neue-upper">Neue Haas Unica</h2>
+    <h1>Uppercase</h1>
+    <h2 class="neue-upper">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</h2>
+    <h1>Lowercase</h1>
+    <h2 class="neue-upper">a b c d e f g h i j k l m n o p q r s t u v w x y z</h2>
+    <h1>Usage:</h1>
+    <h2 class="neue-upper">Descriptions & Navigation Links</h2>
+    <h1>Why?</h1>
+    <p class="para-text">Neue Haas Unica is a take on the classiv Helvetica, this makes it visually strong and easy to read. The contrast of this san-serif with the slab-serif of Rockwell creates a strong visual pull between the two.</p>
+
+  </section>
+
+  <section id="concepts">
+    <h2> Concepts </h2>
+    <h3>Raw Creative Designer</h3>
+    <h4>Main page</h4>
+    <img src="images/mainconcept0.png" alt="black1" style="width:100%;height:100%;">
+    <h4>Button navigation</h4>
+    <img src="images/mainconcept1.png" alt="black1" style="width:100%;height:100%;">
+    <h4>Modal pop up when clicking on project</h4>
+    <img src="images/mainconcept2.png" alt="black1" style="width:100%;height:100%;">
+    <h4>Project will have its own page</h4>
+    <img src="images/mainconcept3.png" alt="black1" style="width:100%;height:100%;">
+
+  </section>
+
+</body>
+
+</html>

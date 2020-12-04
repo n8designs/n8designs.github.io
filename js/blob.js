@@ -1,23 +1,3 @@
-// function aboutMe() {
-//   var MAINPAGE = document.getElementById('mainPage');
-//   var ABOUTME = document.getElementById('AboutMe');
-//   MAINPAGE.style.transform = 'scale(0)';
-//   ABOUTME.style.transform = 'scale(1)';
-//   // MAINPAGE.style.width = "0";
-//   // ABOUTME.style.width = "10000px";
-// }
-//
-// function returnMain() {
-//   var MAINPAGE = document.getElementById('mainPage');
-//   var ABOUTME = document.getElementById('AboutMe');
-//   MAINPAGE.style.transform = 'scale(1)';
-//
-//   ABOUTME.style.transform = 'scale(0)';
-//
-// }
-
-
-
 const blobCursor = (() => {
   const CURSOR = document.querySelector('.cursor');
   const CARDS = document.querySelectorAll('.projectcards');

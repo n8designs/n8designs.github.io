@@ -1,6 +1,5 @@
 html {
   background-color: black;
-  overflow-x: hidden;
 }
 
 .project-grid-container {
@@ -296,25 +295,6 @@ html {
 
 .firstpara4 {
   margin-top: -4.5rem;
-}
-
-.top-link {
-  transition: all .25s ease-in-out;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  display: inline-flex;
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
-  margin: 0 3rem 3rem 0;
-  padding-bottom: 0.5rem;
-  /* border-radius: 50%; */
-  background: transparent;
-}
-
-.endpage {
-  margin-bottom: 5rem;
 }
 
 #project-overview {}

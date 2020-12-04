@@ -5,12 +5,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1" name="viewport" />
 
-  <title></title>
+  <title>About me | n8designs</title>
   <link rel="stylesheet" href="https://use.typekit.net/acl2xwu.css">
-  <link href="css/style.css" rel="stylesheet">
-  <script type="text/javascript" src="js/blob.js" defer async></script>
+  <link href="css/style.min.css" rel="stylesheet">
+  <script type="text/javascript" src="js/blob.min.js" defer async></script>
+  <link href="css/hideoverflow.min.css" rel="stylesheet">
   <!-- <script type="text/javascript" src="js/mainfunctions.js" defer async></script> -->
-  <script type="text/javascript" src="js/back.js" defer async></script>
+  <script type="text/javascript" src="js/back.min.js" defer async></script>
   <link rel="icon" href="images/headericon.ico">
 
 
@@ -18,13 +19,34 @@
 
 <body>
   <div class=cursor></div>
+
+  <div id="sidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeSideNav()">&times;</a>
+    <div class="sidenav-flex">
+      <nav class="sidenav-grid">
+
+        <a href="index.html" class="sidenav-link">Home</a>
+        <a class="sidenav-link2">About Me</a>
+        <a href="contact.html" class="sidenav-link">Contact Me</a>
+        <a href="styleguide.html" class="sidenav-link">StyleGuide</a>
+        <a href="https://github.com/n8designs/PortfolioIAT339" class="sidenav-link">GitHub</a>
+        <a href="citations.html" class="sidenav-link">Citations</a>
+
+      </nav>
+    </div>
+  </div>
   <section id='AboutMe'>
 
     <div class="aboutmegrid-container">
 
       <!-- <img src="images/backarrow.png" div class="backarrow" alt="go back here" onclick="returnMain()" style="cursor:pointer;"> -->
-      <nav>
-        <a onclick="goback()" class="button backarrow">&#8701;</a>
+      <nav class="backarrow-hide">
+        <a href="index.html" class="button backarrow">&#8701;</a>
+      </nav>
+
+      <nav class="mobile-show">
+        <a href="index.html" class="button backarrow">&#8701;</a>
+        <div class="mobile-hamburger" id="hamborgor" onclick="openSideNav()">&#9776;</div>
       </nav>
 
       <div class="aboutmegrid">
