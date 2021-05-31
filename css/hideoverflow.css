@@ -1,3 +1,9 @@
 html {
   overflow-y: hidden;
 }
+
+@media (max-width:1279px) {
+  html {
+    overflow-y: visible;
+  }
+}
