@@ -21,22 +21,22 @@ var cards = document.getElementById("cards");
 
 
 melontimebtn.onclick = function() {
-  footer.style.height = "0";
+  //  footer.style.height = "0";
   modal.style.display = "block";
 }
 
 hatchedbtn.onclick = function() {
-  footer.style.height = "0";
+  //  footer.style.height = "0";
   hatchedmodal.style.display = "block";
 }
 
 agodabtn.onclick = function() {
-  footer.style.height = "0";
+  //  footer.style.height = "0";
   agodamodal.style.display = "block";
 }
 
 shellsbtn.onclick = function() {
-  footer.style.height = "0";
+  //  footer.style.height = "0";
   shellsmodal.style.display = "block";
 }
 
